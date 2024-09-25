@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak PMB STMIK WICIDA</title>
+    <link rel="stylesheet" href="kontak.css">
+</head>
+<body >
+    <header>
+        <img class="logo" src="BRI_2020.svg" width="150px" height="150px" alt="logo">
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="coba.html">Beranda</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="tentangSaya.html">Tentang Saya</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+            </ul>
+        </nav>
+        <div class="ujung">
+            <a class="contact" href="index.html"><button class="navBar">Masuk</button></a>
+            <a class="contact" href="indo.html"><button class="navBar">Daftar</button></a>
+        </div>
+    </header>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>KONTAK KAMI</h2>
+            <h3>E-Reqruitment BRI</h3>
+            <p>Untuk pertanyaan lebih lanjut silakan untuk hubungi nomor tertera atau bisa juga menghubungi kantor kami</p>
+            
+            <div class="contact-box">
+                <div class="contact-item">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li>0821 3529 xxxx (Kak jokowi)</li>
+                        <li>0811 5847 xxxx (Kak prabowo)</li>
+                        <li>0822 3523 xxxx (Kak megawati)</li>
+                    </ul>
+                </div>
+                <div class="contact-item">
+                    <h4>Bank BRI UNIT Citra Niaga</h4>
+                    <p>Jl. Niaga Utara Blok. I No.1 75131 Samarinda Kalimantan Timur · 94 km</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-form">
+            <h3>KIRIM PESAN</h3>
+            <form>
+                <input type="text" placeholder="Nama Lengkap*" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Nomor HP*" required>
+                <textarea placeholder="Tulis Pesan Disini" required></textarea>
+                <button type="submit">Kirim</button>
+                
+                <div id="notification" class="notification">
+                    <p>Terima kasih sudah menghubungi kami!</p>
+                    <button onclick="closeNotification()">Close</button>
+                </div>
+                <script src="script.js"></script>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
