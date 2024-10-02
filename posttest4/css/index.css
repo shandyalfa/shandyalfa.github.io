@@ -1,0 +1,609 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"slnt" 0,"CRSV" 0,"SHRP" 0; */
+}
+
+:root{
+    --primary-color:  #10384e;
+    --secondary-color:  #fafafa;
+    --tertiary-color: #509ab2;
+}
+
+.blackmode{
+    --primary-color:   #F3610F;
+    --secondary-color:  #1E1F24;
+    --tertiary-color: #236187;
+}
+header {
+    display: flex;
+    position: sticky;
+    z-index: 1000; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #509ab2;
+    color: white;
+    background-color: var(--tertiary-color);
+    top:0;
+    height: 100px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ujung a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navBar {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navBar:hover {
+    background-color: #ff8533;
+}
+
+.menu-toggle{
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #0057a6;
+        border-radius: 5px;
+        width: 200px;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ujung {
+        display: none;
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    backdrop-filter: blur(5px);
+    background: blur;
+    background-image: url('/img/20230324044812.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--primary-color);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.halaman1{
+    min-height: 88vh;
+    margin-top: 30px;
+    
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 1200px ;
+    margin-bottom: 100px;
+}
+    
+
+.head-hal1 .head-hal2 .teks1,.teks2{
+    color: black;
+    
+}
+
+
+.teks1,.teks2{
+    font-size: 18px;
+}
+.button-container {
+    padding-top: 30px;
+    display: flex;
+    gap: 10px; /* Jarak antara kedua tombol */
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #a066f1, #0073bc); /* Gradasi warna ungu ke biru */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #7a3fe7, #0061a8); /* Efek hover */
+}
+
+.btn-outline {
+    background: transparent;
+    color: #0073bc;
+    border: 2px solid #0073bc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline .icon {
+    font-size: 14px; /* Ukuran ikon */
+}
+
+.btn-outline:hover {
+    background-color: #0073bc;
+    color: white;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* header{
+    border-radius: 10px;
+    top:0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 2px;
+    padding-left: 4px;
+    height: 70px;
+} */
+
+.sikap{
+    background-color: white;
+}
+
+.ujung{
+    display: flex;
+    justify-content:right;
+}
+
+.ujung .contact{
+    padding:3px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.satu p{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kolom1{
+    background-color: white;
+}
+.kolom2{
+    background-color: white;
+}
+.nav li{
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+.nav li a{
+    transition: all 0.4s ease 0s;
+    color: #0d9df0 ;
+
+}
+.nav li a:hover{
+    color:  #f0710d;
+    border-bottom:1px solid  #f0710d;
+}
+
+.navBar{
+    padding: 9px 30px;
+    background-color: #00BFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    
+    transition: all 0.4s ease 0s;
+}
+
+.navBar:hover{
+    transform: scale(1.03);
+}
+/* =============================================================================================================== */
+
+section{
+    min-height: 0vh;
+    max-height: 58vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    margin-bottom: 50px;
+}
+
+section:nth-child(1){
+    color: #00BFFF;
+}
+section:nth-child(2){
+    color: darkblue;
+    background: white;
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+section:nth-child(3){
+    color: #07262e;
+}
+section:nth-child(4){
+    color: rgb(9, 83, 9);
+    background: white;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+
+}
+section .container{
+    margin-bottom: 100px;
+    padding: 0px;
+    
+}
+section h1{
+    font-size: 60px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .cards{
+    display: flex;
+    height: 500px;
+}
+section .cards .text{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #007bff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 70px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+section .cards .text h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px ;
+}
+
+@media(max-width:900px){
+    section h1{
+        font-size: 40px;
+    }
+    secton .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* ================================================================================================== */
+
+footer {
+    background-color: rgb(14, 101, 127);
+    padding: 20px 40px;
+}
+
+.yakin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.language-icons img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.popup {
+    display: none; /* Sembunyikan pop-up secara default */
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.humberger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width:768px){
+    .hamburger{
+    display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate (45deg);
+    }
+    .hamburger.active .bar:nth-child(){
+    transform: translateY(8px) rotate (45deg);
+    }
+    
+    .nav-menu{
+        position:fixed;
+        Left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    
+
+
+
+}
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100px; /* Untuk tablet, bisa disesuaikan pada breakpoint mobile */
+        height: 100px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .halaman1 {
+        width: 90%; /* Lebar halaman akan mengikuti ukuran layar mobile dan tablet */
+        font-size: 28px; /* Ukuran font menyesuaikan untuk mobile dan tablet */
+    }
+
+    section h1 {
+        font-size: 36px; /* Lebih besar untuk tablet, lebih kecil untuk mobile */
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .text {
+        padding: 30px; /* Padding menyesuaikan layar tablet dan mobile */
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Untuk logo lebih kecil pada mobile (<=600px) */
+    @media (max-width: 600px) {
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .halaman1 {
+            font-size: 24px; /* Ukuran font lebih kecil untuk mobile */
+        }
+
+        section h1 {
+            font-size: 28px;
+        }
+
+        section h2 {
+            font-size: 24px;
+        }
+    }
+}

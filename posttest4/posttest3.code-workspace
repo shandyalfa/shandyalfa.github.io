@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../webalizer"
+	},
+	{
+		"path": "../xampp"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "posttest3"
+  }
+}
